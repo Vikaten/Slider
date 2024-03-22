@@ -11,8 +11,14 @@
 .slider {
     margin-top: 50px;
     margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    margin-left: 110px;
+    /* overflow: hidden; */
+    gap: 20px;
 }
 
 .img {
-    width: 300px;
+    display: flex;
+    width: 600px;
 }
