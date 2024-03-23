@@ -32,15 +32,13 @@ if (prev != null) {
         }
     });
 }
-const numbersArray = Array.from({ length: img.length }, (_, index) => index);
-console.log(numbersArray);
+const imgArray = Array.from(img);
+const numbersArray = Array.from({ length: imgArray.length }, (_, index) => index);
 setInterval(() => {
-    for (let i = 0; i < numbersArray.length; i++) {
-        let rel = img[i].src;
-        let randomIndex = Math.floor(Math.random() * numbersArray.length);
-        img[i].src = img[randomIndex].src;
-        img[i].src = rel;
-        // let indexRandom = numbersArray.indexOf(randomIndex);
-        // numbersArray.splice(indexRandom, 1)
+    for (let i = numbersArray.length - 1; i > 0; i--) {
+        let tmp = imgArray[i];
+        let rnd = Math.floor(Math.random() * (i + 1));
+        imgArray[i] = imgArray[rnd];
+        imgArray[rnd] = tmp;
     }
 }, 3000);
