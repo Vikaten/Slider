@@ -35,10 +35,15 @@ if (prev != null) {
 const imgArray = Array.from(img);
 const numbersArray = Array.from({ length: imgArray.length }, (_, index) => index);
 setInterval(() => {
-    for (let i = numbersArray.length - 1; i > 0; i--) {
+    for (let i = 0; i < imgArray.length - 1; i++) {
         let tmp = imgArray[i];
         let rnd = Math.floor(Math.random() * (i + 1));
         imgArray[i] = imgArray[rnd];
         imgArray[rnd] = tmp;
     }
-}, 3000);
+    imgArray.forEach((imgElement, index) => {
+        if (imgElement instanceof HTMLImageElement) {
+            imgElement.style.order = index.toString();
+        }
+    });
+}, 2000);
