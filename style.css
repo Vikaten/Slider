@@ -1,6 +1,12 @@
-* {
+*,
+*::after, 
+*::before {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: #ddd9d1;
 }
 
 .container {
@@ -8,17 +14,95 @@
     text-align: center;
 }
 
-.slider {
+#slider {
+    width: 550px;
+    overflow: hidden;
+    position: absolute;
+    right: 70px;
+    top: 25px;
+}
+
+#slider-line {
+    transition: all ease 1s;
     margin-top: 50px;
     margin-bottom: 20px;
-    position: relative;
     display: flex;
-    margin-left: 110px;
-    gap: 20px;
+    gap: 77px;
+    position: relative;
+    
+    bottom: 40px;
+    /* overflow: hidden; */
 }
 
 .img {
     display: flex;
-    width: 600px;
-    border-radius: 10px;
+    width: 470px;
+    border-radius: 120px;
+    padding: 0 10px 10px 0;
+}
+
+.paragraf {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    width: 500px;
+    text-align: justify;
+    top: 250px;
+    left: 150px;
+}
+
+#title {
+    font-size: 120px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 900;
+    top: 25px;
+    left: 150px;
+    text-transform: uppercase;
+    padding-bottom: 0;
+}
+
+#prev,
+#next {
+    background: none;
+    border: none;
+    width: 20px;
+    padding-top: 0;
+}
+
+#prev img,
+#next img {
+    width: 40px;
+    padding-top: 0;
+}
+
+#buttons {
+    top: 670px;
+    right: 300px;
+    display: flex;
+    gap: 100px;
+}
+
+#arrow {
+    width: 1px;
+    height: 730px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+}
+
+#arrow2 {
+    height: 1px;
+    width: 1500px;
+    position: absolute;
+    bottom: 40px;
+    background-color: black;
+}
+
+#block-text-arrows {
+    display:inline-flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 180px;
+    bottom: 140px;
 }
