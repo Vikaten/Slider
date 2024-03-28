@@ -15,7 +15,7 @@ body {
 }
 
 #slider {
-    width: 550px;
+    width: 470px;
     overflow: hidden;
     position: absolute;
     right: 70px;
@@ -35,7 +35,7 @@ body {
     display: flex;
     width: 470px;
     border-radius: 120px;
-    padding: 0 10px 10px 0;
+    /* padding: 0 10px 10px 0; */
 }
 
 .paragraf {

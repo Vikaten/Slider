@@ -7,12 +7,12 @@ let setright = 0;
 if (next != null) {
     next.addEventListener('click', function () {
         if (sliderLine != null) {
-            setright -= 540;
+            setright -= 470;
             sliderLine.style.right = setright + 'px';
             if (setright < 0) {
                 if (sliderLine != null) {
-                    sliderLine.style.right = 2720 + 'px';
-                    setright = 2720;
+                    sliderLine.style.right = 2820 + 'px';
+                    setright = 2820;
                 }
             }
         }
@@ -21,9 +21,9 @@ if (next != null) {
 if (prev != null) {
     prev.addEventListener('click', function () {
         if (sliderLine != null) {
-            setright += 540;
+            setright += 470;
             sliderLine.style.right = setright + 'px';
-            if (setright > 2720) {
+            if (setright > 2820) {
                 if (sliderLine != null) {
                     sliderLine.style.right = 0 + 'px';
                     setright = 0;
