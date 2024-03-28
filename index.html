@@ -4,18 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,95.1,900;1,95.1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="slider">
-            <img class = 'img' src="./assets/photo1.jpg" alt="">
-            <img class = 'img' src="./assets/photo2.jpg" alt="">
-            <img class = 'img' src="./assets/photo3.jpg" alt="">
-            <img class = 'img' src="./assets/photo4.jpg" alt="">
+        <div id = 'arrow'></div>
+        <div id = 'arrow2'></div>
+        <div id = 'block-text-arrows'>
+            <h1 id = 'title'>Models</h1>
+            <p class = 'paragraf'> is the leading interactive fashion database connecting the world to models, creative talent, magazines, and luxury and commercial brands. With its editorial content highlighting talent and creatives shaping the industry today - with over 2 million visits per month - it is an essential tool to attribute credit and source new talent.</p>
+            <p class = 'paragraf'>Keep a pulse on the fashion world. Through exclusive news, trends, rankings, and interviews with the industry makers of today and tomorrow, Models.com is your daily source of inspiration for all things fashion.</p>
+            <div id = 'buttons'>
+                <button id = 'next'><img src="assets\arrow2.png" alt=""></button>
+                <button id = 'prev'><img src="assets\arrow.png" alt=""></button>
+            </div>
         </div>
-        <button id = 'prev'>Назад</button>
-        <button id = 'next'>Вперед</button>
+        <div id = 'slider'>
+            <div id = 'slider-line'>
+                <img class = 'img' src="./assets/barbara.jpg" alt="">
+                <img class = 'img' src="./assets/ira.jpg" alt="">
+                <img class = 'img' src="./assets/kara.jpg" alt="">
+                <img class = 'img' src="./assets/hill.jpg" alt="">
+                <img class = 'img' src="./assets/hings.jpg" alt="">
+                <img class = 'img' src="./assets/depp.jpg" alt="">
+            </div>
+        </div>
+        
+        
     </div>
     <script src="script.js"></script>
 </body>
