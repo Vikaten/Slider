@@ -27,11 +27,8 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
-    gap: 77px;
     position: relative;
-    
     bottom: 40px;
-    /* overflow: hidden; */
 }
 
 .img {
@@ -83,7 +80,7 @@ body {
 
 #arrow {
     width: 1px;
-    height: 730px;
+    height: 750px;
     background-color: black;
     display: inline-block;
     position: absolute;
@@ -92,7 +89,7 @@ body {
 
 #arrow2 {
     height: 1px;
-    width: 1500px;
+    width: 1485px;
     position: absolute;
     bottom: 40px;
     background-color: black;
