@@ -10,16 +10,17 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    margin-top: 30px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 }
 
 #slider {
     width: 470px;
     overflow: hidden;
-    position: absolute;
-    right: 70px;
-    top: 25px;
 }
 
 #slider-line {
@@ -35,7 +36,6 @@ body {
     display: flex;
     width: 470px;
     border-radius: 120px;
-    /* padding: 0 10px 10px 0; */
 }
 
 .paragraf {
@@ -78,28 +78,26 @@ body {
     gap: 100px;
 }
 
-#arrow {
-    width: 1px;
-    height: 750px;
-    background-color: black;
-    display: inline-block;
-    position: absolute;
-    left: 40px;
+.arrow {
+    position: fixed;
+    width: 100%;
+    background-color: #000000; /* Цвет полоски */
 }
 
-#arrow2 {
-    height: 1px;
-    width: 1485px;
-    position: absolute;
+.bottom {
     bottom: 40px;
-    background-color: black;
+    height: 1px;
+}
+
+.left {
+    height: 100%;
+    width: 1px;
+    left: 40px;
 }
 
 #block-text-arrows {
     display:inline-flex;
     flex-direction: column;
     gap: 30px;
-    position: absolute;
-    left: 180px;
-    bottom: 140px;
 }
+
