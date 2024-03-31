@@ -28,8 +28,6 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
-    /* position: relative; */
-    bottom: 40px;
 }
 
 .img {
@@ -80,7 +78,7 @@ body {
 .arrow {
     position: fixed;
     width: 100%;
-    background-color: #000000; /* Цвет полоски */
+    background-color: #000000;
 }
 
 .bottom {
