@@ -1,36 +1,41 @@
 const next: HTMLButtonElement | null = document.querySelector('#next');
 const prev: HTMLButtonElement | null = document.querySelector('#prev');
 const sliderLine: HTMLElement | null = document.querySelector('#slider-line');
+const slider: HTMLElement | null = document.querySelector('#slider');
 const img: NodeListOf<Element> = document.querySelectorAll('.img');
+const images: NodeListOf<Element> = document.querySelectorAll('#slider #slider-line .img');
 let setright: number = 0;
+let width: number = 0;
+let counter: number = 0;
+
 if (next != null) {
     next.addEventListener('click', function () {
-        if (sliderLine != null) {
-            setright -= 470;
-            sliderLine.style.right = setright + 'px';
-            if (setright < 0) {
-                if (sliderLine != null) {
-                    sliderLine.style.right = 2820 + 'px';
-                    setright = 2820;
-                }
+        if (next != null) {
+            counter++;
+            if (counter >= images.length) {
+                counter = 0;
             }
+            move();
         }
     });
 }
 
 if (prev != null) {
     prev.addEventListener('click', function () {
-        if (sliderLine != null) {
-            setright += 470;
-            sliderLine.style.right = setright + 'px';
-            if (setright > 2820) {
-                if (sliderLine != null) {
-                    sliderLine.style.right = 0 + 'px';
-                    setright = 0;
-                }
+        if (prev != null) {
+            counter--;
+            if (counter < 0) {
+                counter = images.length - 1;
             }
+            move();
         }
     });
+}
+
+function move() {
+    if (sliderLine != null) {
+        sliderLine.style.transform = 'translate(-' + counter * width + 'px)';
+    }
 }
 
 const imgArray = Array.from(img);
@@ -49,3 +54,21 @@ setInterval(() => {
         }
     });
 }, 2000);
+
+function init() {
+    console.log('resize')
+    if (slider != null) {
+        width = slider.offsetWidth;
+    }
+    if (sliderLine != null) {
+        sliderLine.style.width = width * images.length + 'px';
+        images.forEach(item => {
+            if (item instanceof HTMLImageElement) {
+                item.style.width = width + 'px';
+            }
+    });
+    }
+    move();
+}
+init();
+window.addEventListener('resize', init);
