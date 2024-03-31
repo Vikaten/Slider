@@ -58,7 +58,6 @@ body {
 #next {
     background: none;
     border: none;
-    width: 20px;
     padding-top: 0;
 }
 
@@ -77,11 +76,11 @@ body {
 
 .arrow {
     position: fixed;
-    width: 100%;
     background-color: #000000;
 }
 
 .bottom {
+    width: 100%;
     bottom: 40px;
     height: 1px;
 }
@@ -117,5 +116,82 @@ body {
 
     .left {
         left: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #slider {
+        max-width: 34%;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #title {
+        font-size: 70px;
+    }
+
+    #block-text-arrows {
+        align-items: center;
+    }
+
+    #slider-line {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    #slider {
+        max-width: 43%;
+    }
+
+    .bottom {
+        bottom: 10px;
+    }
+    
+    .left {
+        left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .paragraf {
+        max-width: 400px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    #slider {
+        max-width: 60%;
+    }
+
+    .paragraf {
+        max-width: 300px;
+    }
+
+    #title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 310px) {
+    #slider {
+        max-width: 60%;
+    }
+
+    .paragraf {
+        max-width: 240px;
+    }
+
+    #title {
+        font-size: 40px;
     }
 }
