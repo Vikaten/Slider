@@ -22,20 +22,21 @@ html, body {
 }
 
 #slider {
-    max-width: 28.8%;
+    max-width: 28%;
     overflow: hidden;
 }
 
  #slider-line {
-  transition: all ease 1s;
+    transition: all ease 1s;
     margin-top: 50px;
     margin-bottom: 20px;
-     display: flex;
+    display: flex;
 }  
 
 .img {
     display: flex;
     border-radius: 120px;
+    max-width: 28%;
 }
 
 .paragraf {
