@@ -5,8 +5,10 @@
     padding: 0;
 }
 
-body {
+html, body {
     background: #ddd9d1;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container {
@@ -16,19 +18,20 @@ body {
     align-items: center;
     justify-content: center;
     gap: 80px;
+    height: 100%;
 }
 
 #slider {
-    max-width: 29.75%;
+    max-width: 28.8%;
     overflow: hidden;
 }
 
-#slider-line {
-    transition: all ease 1s;
+ #slider-line {
+  transition: all ease 1s;
     margin-top: 50px;
     margin-bottom: 20px;
-    display: flex;
-}
+     display: flex;
+}  
 
 .img {
     display: flex;
@@ -77,15 +80,6 @@ body {
 .arrow {
     position: fixed;
     background-color: #000000;
-}
-
-.bottom {
-    width: 100%;
-    bottom: 40px;
-    height: 1px;
-}
-
-.left {
     height: 200%;
     width: 1px;
     left: 40px;
@@ -110,12 +104,14 @@ body {
        gap: 40px;
     }
 
-    .bottom {
-        bottom: 20px;
-    }
-
-    .left {
+    .arrow {
         left: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .paragraf {
+        max-width: 1000px;
     }
 }
 
@@ -123,12 +119,14 @@ body {
     #slider {
         max-width: 34%;
     }
+
 }
 
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
         margin-top: 10px;
+        gap: 20px;
     }
 
     #title {
@@ -137,6 +135,11 @@ body {
 
     #block-text-arrows {
         align-items: center;
+        gap: 10px;
+    }
+
+    .paragraf {
+        max-width: 800px;
     }
 
     #slider-line {
@@ -149,11 +152,7 @@ body {
         max-width: 43%;
     }
 
-    .bottom {
-        bottom: 10px;
-    }
-    
-    .left {
+    .arrow {
         left: 10px;
     }
 }
