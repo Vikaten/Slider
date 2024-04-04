@@ -117,10 +117,10 @@ html, body {
 }
 
 @media (max-width: 1000px) {
+    #img, 
     #slider {
         max-width: 34%;
     }
-
 }
 
 @media (max-width: 900px) {
@@ -149,6 +149,7 @@ html, body {
 }
 
 @media (max-width: 700px) {
+    #img, 
     #slider {
         max-width: 43%;
     }
@@ -169,6 +170,7 @@ html, body {
 }
 
 @media (max-width: 460px) {
+    #img, 
     #slider {
         max-width: 60%;
     }
@@ -183,6 +185,7 @@ html, body {
 }
 
 @media (max-width: 310px) {
+    #img, 
     #slider {
         max-width: 60%;
     }
